@@ -1,12 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Synergy Horizons</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Slabo 27px' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
         <style>
           html, body {
             background-color: #cacdd1;
@@ -34,25 +35,27 @@
             padding: 10px 50px 7px 50px;
           }
           .navbar-nav {
-            margin-left: auto; 
+            margin-left: auto;
             margin-right: 0
           }
           .navbar-brand {
             font-family: 'Slabo 27px', sans-serif;
             font-size: 17pt;
           }
+          .cash {
+            max-width: 100%;
+            height: 400px;
+          }
           #center-container {
             background-color: #90A5A3;
             padding: 0px;
           }
-
           #mid-symbol {
-            padding-left: 34%;
             font-size: 15pt;
             font-weight: bold;
           }
           #who-main {
-            padding: 8% 0px 20px 90px;
+            padding: 8% 0px 20px 0px;
             font-size: 16px;
             background-color: #90A5A3;
           }
@@ -171,13 +174,13 @@
         <button id="navCollapseButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#who-main">About SH <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project-main">Production ortfolio</a>
+              <a class="nav-link" href="#project-main">Events and Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact-main">Contact</a>
@@ -191,18 +194,24 @@
 
     <!-- Who I am Section -->
     <div id="who-main" class="col-md-7 row col-centered">
-      <div id="who-text">
-        <p>Synergy Horizons is a collective producing events, leading projects, and designing interactions in the immersive art and theatre space. Give us your money today. 
+      <div id="who-text"  class="text-center">
+        <p>Synergy Horizons produces events, leads projects, and designs interactions in the immersive art and theatre space. Give us your money today.
           </p>
           <p id="mid-symbol">——
             &#8734 ——</p>
-          <p class="text-center">Artists on a trajectory
-        </div>
+          <p >Artists on a trajectory</p>
+      </div>
     </div>
-
+    <div class="divider-line ">
+    </div>
+    <div>
+      <img class="cash" src="https://i.imgur.com/QsMCvuD.jpg">
+    </div>
+    <div class="divider-line">
+    </div>
     <!-- Project Section -->
     <div id="project-main" class="col-centered">
-      <h2 class="text-center">Portfolio</h2>
+      <h2 class="text-center">Events and Projects</h2>
       <p class="text-center">——
             &#8734 ——</p>
       <div class="row">
@@ -256,7 +265,7 @@
           </form>
         </div>
         <div id="contact-why" class="col-md-6">
-          <p>If you're interested in contacting me about art, a coding project you're working on, or just to say hey, send me a message here.
+          <p>If you're interested in contacting SH about an immersive art experience, event, installation, or just to say hey, send us a message here.
           </p>
         </div>
       </div>
@@ -271,7 +280,7 @@
     <p>This page was frustratingly crafted by Chris Swimmer, aka Raïe.</p>
   </div>
   <div id="about-social" class="col-md-6 col-centered">
-    <h4 id="find-me">Find me on social</h4>
+    <h4 id="find-me">Find us on social</h4>
     <div class="row">
       <a href="https://www.facebook.com/chrisrswimmer" class="fa fa-facebook"></a>
       <a href="https://twitter.com/chrisrswimmer" class="fa fa-twitter"></a>
@@ -287,3 +296,7 @@
 </div>
 
 </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="index.js"></script>
+</body>
+</html>
