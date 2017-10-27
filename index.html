@@ -10,11 +10,11 @@
 
         <style>
           html, body {
-            background-color: #001a33;
+            background-color: #0D467E;
             margin: 0px;
             padding: 0px;
             border: 0px;
-            font-family: Roboto;
+            font-family: Helvetica;
             width: 100%;
           }
           .col-centered {
@@ -29,7 +29,7 @@
             z-index: 1000;
             left: 0;
             right: 0;
-            background-color: #49716D;
+            background-color: #F5A968;
             border: 0px;
             margin: 0 auto;
             padding: 10px 50px 7px 50px;
@@ -39,15 +39,27 @@
             margin-right: 0
           }
           .navbar-brand {
-            font-family: 'Slabo 27px', sans-serif;
+            font-family: Helvetica, sans-serif;
             font-size: 17pt;
+            color: #0D467E;
+          }
+          #logo-img {
+            max-height: 50px;
           }
           .cash {
             max-width: 100%;
             height: 400px;
           }
+          #cash-top {
+            min-width: 100%;
+
+          }
+          #cash-div {
+            min-width: 100%;
+            padding-top: 50px;
+          }
           #center-container {
-            background-color: #90A5A3;
+            background-color: #6495ED;
             padding: 0px;
           }
           #mid-symbol {
@@ -55,17 +67,17 @@
             font-weight: bold;
           }
           h1 {
-            font-family: 'Slabo 27px', sans-serif;
+            font-family: Helvetica, sans-serif;
             color: white;
             font-size: 60pt;
           }
           #who-main {
             padding: 3% 0px 5px 0px;
             font-size: 16px;
-            background-color: #90A5A3;
+            background-color: #6495ED;
           }
           #who-text {
-            padding-top: 5%;
+            padding-top: 0px;
             padding-bottom: 0px;
           }
           #who-hey-text {
@@ -104,9 +116,16 @@
             height: 2px;
             background-color: gray;
           }
+          #num-text {
+            font-size: 100pt;
+            color: #F5A968;
+            text-align: center;
+            border-color: #001a33;
+            text-shadow: 3px 0 #001a33;
+          }
           #contact-main {
             padding-top: 5%;
-            background-color: #90A5A3;
+            background-color: #6495ED;
             margin-bottom: 0px;
           }
           #contact-form-text {
@@ -171,12 +190,19 @@
             background: #0077B5;
             color: white;
           }
-          .fa-github {
-            background: #333;
+          .fa-instagram {
+            background: #cd486b;
             color: white;
           }
           #find-me {
             padding-left: 8%;
+          }
+          #iframe {
+            width: 100%;
+            height: 500px;
+          }
+          .logo-row {
+            padding: 15px 10% 15px 13%;
           }
         </style>
     </head>
@@ -184,20 +210,17 @@
   <!-- Floating bar on top -->
   <div id="navbar-div">
       <nav class="navbar navbar-expand-md navbar-light col-centered">
-        <a class="navbar-brand" href="#">Synergy Horizons</a>
+        <a class="navbar-brand" href="#"><img id="logo-img" src="https://i.imgur.com/UN7g6FD.png"> CA$H</a>
         <button id="navCollapseButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#who-main">About SH <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#iframe">About CA$H <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project-main">Events and Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-main">Contact</a>
+              <a class="nav-link" href="#line1">Contact</a>
             </li>
           </ul>
         </div>
@@ -205,58 +228,16 @@
     </div>
   <!-- Primary information area -->
   <div id="center-container" class="col-centered col-md-10">
-
-    <!-- Who I am Section -->
-    <div id="who-main" class="col-md-7 row col-centered">
-      <div id="who-text"  class="text-center">
-        <h1>Synergy Horizons</h1>
-
-        <br>
-        <p>Synergy Horizons produces events, leads projects, and designs interactions in the immersive art and theatre space. Give us your money today.
-          </p>
-          <p id="mid-symbol">——
-            &#8734 ——</p>
-      </div>
+    <div id="cash-div">
+      <img id="cash-top" src="https://i.imgur.com/Ey4nsAA.png">
     </div>
-
-    <div class="divider-line">
+    <div class="divider-line" id="line1">
     </div>
-    <div id="gif-money" class="col-centered">
-      <img id="gif" class="center-text" src="https://vignette.wikia.nocookie.net/glee/images/7/79/Make_it_rain.gif/revision/latest?cb=20140122031518">
-    </div>
-    <div class="divider-line">
-    </div>
-    <!-- Project Section -->
-    <div id="project-main" class="col-centered">
-      <h2 class="text-center">Events and Projects</h2>
-      <p class="text-center">——
-            &#8734 ——</p>
-      <div class="row">
-        <div class="project col-md-5 col-centered" id="project1">
-          <h4 class="text-center">Project Placeholder 1</h4>
-          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
-        </div>
-        <div class="project col-md-5 col-centered" id="project1">
-          <h4 class="text-center">Project Placeholder 2</h4>
-          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
-        </div>
-        <div class="project col-md-5 col-centered" id="project1">
-          <h4 class="text-center">Project Placeholder 3</h4>
-          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
-        </div>
-        <div class="project col-md-5 col-centered" id="project1">
-          <h4 class="text-center">Project Placeholder 4</h4>
-          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
-        </div>
-      </div>
-    </div>
-    <div class="divider-line">
-    </div>
-
     <!-- Contact Section -->
     <div id="contact-main">
-      <h2 class="text-center">Contact</h2>
-       <p class="text-center">——
+      <h1 class="text-center">Call Us Now!</h1>
+      <p id="num-text">1-800-CAT-MESS</p>
+       <!-- <p class="text-center">——
             &#8734 ——</p>
       <div id="contact-form-text" class="row">
         <div id="contact-form" class="col-md-4">
@@ -285,12 +266,83 @@
           <p>If you're interested in contacting SH about an immersive art experience, event, installation, or just to say hey, send us a message here.
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="divider-line ">
     </div>
     <div>
       <img class="cash" src="https://i.imgur.com/QsMCvuD.jpg">
+    </div>
+    <div class="divider-line">
+    </div>
+    <!-- Who I am Section
+    <div id="who-main" class="col-md-7 row col-centered">
+      <div id="who-text"  class="text-center">
+         <h1>Synergy Horizons</h1>
+
+        <br>
+        <p>Synergy Horizons produces events, leads projects, and designs interactions in the immersive art and theatre space. Give us your money today.
+        </p>
+          <p id="mid-symbol">——
+            &#8734 ——</p>
+      </div>
+    </div> -->
+
+
+    <!-- Project Section
+    <div id="project-main" class="col-centered">
+      <h2 class="text-center">Events and Projects</h2>
+      <p class="text-center">——
+            &#8734 ——</p>
+      <div class="row">
+        <div class="project col-md-5 col-centered" id="project1">
+          <h4 class="text-center">Project Placeholder 1</h4>
+          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
+        </div>
+        <div class="project col-md-5 col-centered" id="project1">
+          <h4 class="text-center">Project Placeholder 2</h4>
+          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
+        </div>
+        <div class="project col-md-5 col-centered" id="project1">
+          <h4 class="text-center">Project Placeholder 3</h4>
+          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
+        </div>
+        <div class="project col-md-5 col-centered" id="project1">
+          <h4 class="text-center">Project Placeholder 4</h4>
+          <img class="project-img" src="https://thumb9.shutterstock.com/display_pic_with_logo/759610/451156312/stock-vector-sacred-geometry-symbol-with-all-seeing-eye-in-acid-colors-mystic-alchemy-occult-concept-design-451156312.jpg">
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Contact Section -->
+    <div class="row logo-row">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+    </div>
+    <div class="divider-line">
+    </div>
+
+    <div class="about-vid">
+      <iframe id="iframe" width="100%" src="http://www.youtube.com/embed/quC55nq_gUQ?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="row logo-row">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+      <img id="cash-logo-mid" src="https://i.imgur.com/UN7g6FD.png">
+    </div>
+    <div class="divider-line">
+    </div>
+    <div id="gif-money" class="col-centered">
+      <img id="gif" class="center-text" src="https://vignette.wikia.nocookie.net/glee/images/7/79/Make_it_rain.gif/revision/latest?cb=20140122031518">
+    </div>
+    <div class="divider-line">
+    </div>
+    <div id="contact-main">
+      <h1 class="text-center">Call Us Now!</h1>
+      <p id="num-text">1-800-CAT-MESS</p>
+    </div>
+    <div class="divider-line">
     </div>
     </div>
 </div>
@@ -298,22 +350,22 @@
 <div id="about-main" class="col-md-12 row">
   <div id="about-made-by" class="col-md-5">
     <h3>About this site</h3>
-    <p>This page was frustratingly crafted by Chris Swimmer, aka Raïe.</p>
+    <p>This page was handcrafted in a dark basement by our unpaid web designers.</p>
   </div>
   <div id="about-social" class="col-md-6 col-centered">
     <h4 id="find-me">Find us on social</h4>
     <div class="row">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-instagram"></a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-facebook"></a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-twitter"></a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-linkedin"></a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-github"></a>
     </div>
   </div>
 </div>
 
 <!-- Copyright Section -->
 <div id="copyright" class="text-center">
-  copyright 2017 Raïe
+  copyright 2017 CA$H
 </div>
 
 </div>
