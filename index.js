@@ -8,7 +8,7 @@ setInterval(function(){
       break;
     case 1:
       adjective = "interesting";
-      document.getElementById('coming-soon').style.color = "#EEFF02";
+      document.getElementById('coming-soon').style.color = "#E90DED";
       break;
     case 2:
       adjective = "exciting";
@@ -20,7 +20,7 @@ setInterval(function(){
       break;
     case 4:
       adjective = "successful";
-      document.getElementById('coming-soon').style.color = "#EEFF02";
+      document.getElementById('coming-soon').style.color = "#E90DED";
       break;
     case 5:
       adjective = "transformative";
