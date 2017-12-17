@@ -17,10 +17,13 @@ setInterval(function(){
     case 4:
       adjective = "successful";
       break;
+    case 5:
+      adjective = "transformative";
+      break;
   }
   
   document.getElementById("adjective").innerHTML = adjective;
-  if(change === 4){
+  if(change === 5){
     change = 0;
   } else {
     change++;
