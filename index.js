@@ -54,6 +54,6 @@ setInterval(function(){
     colorArray.push(newText);
     counter++;
   }
-  document.getElementById("text").innerHTML = colorArray.join('');
+  document.getElementById("coming-soon").innerHTML = colorArray.join('');
   colorArray = [];
 },500);
