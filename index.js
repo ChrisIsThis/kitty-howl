@@ -4,27 +4,27 @@ setInterval(function(){
  switch(change){
     case 0:
       adjective = "attractive";
-      document.getElementById('coming-soon').style.color = "#01FEFF";
+  
       break;
     case 1:
       adjective = "interesting";
-      document.getElementById('coming-soon').style.color = "#E90DED";
+
       break;
     case 2:
       adjective = "exciting";
-      document.getElementById('coming-soon').style.color = "#FFFD03";
+
       break;
     case 3:
       adjective = "accessible";
-      document.getElementById('coming-soon').style.color = "#01FEFF";
+
       break;
     case 4:
       adjective = "successful";
-      document.getElementById('coming-soon').style.color = "#E90DED";
+
       break;
     case 5:
       adjective = "transformative";
-      document.getElementById('coming-soon').style.color = "#FFFD03";
+
       break;
   }
   
@@ -36,3 +36,24 @@ setInterval(function(){
   }
   
 },3000)
+var textArray = document.getElementById('coming-soon').innerHTML.split('')
+var colorArray = [];
+var counter = 0;
+
+setInterval(function(){
+  for (var x = 0; x < textArray.length; x++){
+    var color;
+    if (counter % 3 === 0){
+      color = "#01FEFF";
+    } else if (counter % 3  === 1){
+      color = "#E90DED";
+    } else if (counter % 3  === 2){
+      color = "#FFFD03";
+    }
+    var newText = "<span style='color: " + color + "'>" + textArray[x] + "</span>"
+    colorArray.push(newText);
+    counter++;
+  }
+  document.getElementById("text").innerHTML = colorArray.join('');
+  colorArray = [];
+},500);
